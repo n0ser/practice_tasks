@@ -21,7 +21,7 @@ gulp.task("html", function () {
         prefix: "@@",
       }))
       .pipe(htmlmin({
-        collapseWhitespace: false
+        collapseWhitespace: true
       }))
     .pipe(dest("dist"));
 });
@@ -40,7 +40,7 @@ gulp.task("scss", function () {
 });
 
 gulp.task("processImages", function () {
-  return src('./src/img/**/*.{gif,jpg,png,svg}')
+  return src('./src/img/**.{gif,jpg,png,svg}')
   .pipe(dest('dist/image'))
   });
 
@@ -48,15 +48,14 @@ gulp.task("clear", function() {
   return deleteAsync('dist')
 });
 
-gulp.task("build", series("clear", "html", "scss"));
+gulp.task("build", series("clear", "processImages", "html", "scss"));
 
 gulp.task("serve", function(){
   sync.init({
     server: './dist'
   })
-
   watch('src/**.html', series("html")).on('change', sync.reload)
   watch('src/scss/**.scss', series("scss")).on('change', sync.reload)
 });
 
-gulp.task("server", series("clear","processImages", "scss", "html", "serve"))
+gulp.task("server", series("build", "serve"))

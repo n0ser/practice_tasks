@@ -7,13 +7,53 @@
             <p class="about__description about__description--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
             <p class="about__description about__description--regular">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
         </article>
-        <div class="about__image"><img src="image/about-img.png" alt=""></div>
+        <img class="about__img" src="image/about_img.svg" alt="about_img">
     </section>
     <section class="book">
-        <div class="book__img"><img src="" alt=""></div>
+        <img class="book__img" src="image/book_img.svg" alt="book_img">
         <form action="#" class="book__form">
-
+            <div class="book__info">
+                <h1 class="book__title">BOOK A TABLE</h1>
+                <div class="line"></div>
+            </div>
+            <input type="text" placeholder="Name" class="book_input">
+            <input type="email" placeholder="Email" class="book_input">
+            <input type="phone" placeholder="Phone" class="book_input">
+            <select name="people" id="" class="book_input book_input--select">
+                <option disabled value="People" selected="selected">People</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <input type="text" placeholder="Date (mm/dd)" class="book_input">
+            <select name="time" class="book_input book_input--select">
+                <option disabled value="time" selected="selected">Time</option>
+                <option value="1">9:00-11:00</option>
+                <option value="2">11:00-13:00</option>
+                <option value="3">13:00-15:00</option>
+                <option value="4">15:00-17:00</option>
+                <option value="5">17:00-19:00</option>
+                <option value="6">19:00-21:00</option>
+                <option value="6">21:00-23:00</option>
+            </select>
+            <input type="submit" value="BOOK NOW" class="book__button">
         </form>
+    </section>
+    <p class="booking-info">Mon - Fri: <strong class="booking-info__desc"> 8PM - 10PM</strong> , Sat - Sun: <strong class="booking-info__desc"> 8PM - 3PM</strong>, Phone: <strong class="booking-info__desc"> +40 729 131 637/+40 726 458 782</strong></p>
+    <section class="specialties">
+        <p class="specialties__subtitle">SPECIALTIES</p>
+        <div class="specialties__content">
+            <img class="specialties__img" src="image/specialties_img.svg" alt="">
+            <article class="specialties__text">
+                <h1 class="specialties__title">CHOCOLATE PANCAKES</h1>
+                <div class="line"> </div>
+                <p class="specialties__description specialties__description--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+                <p class="specialties__description specialties__description--regular">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+            </article>
+        </div>
     </section>
 </div>
 @@include('part/footer.html')
