@@ -11,7 +11,7 @@ import sync from "browser-sync";
 import concat from "gulp-concat";
 import autoPrefixer from "gulp-autoprefixer";
 
-const { src, dest, series, watch, reload} = gulp;
+const { src, dest, series, watch} = gulp;
 const sass = gulpSass(dartSass);
 
 gulp.task("html", function () {
