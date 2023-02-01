@@ -2,81 +2,19 @@ $footer_color: rgba(255, 255, 255, 0.5);
 $book-info: rgba(51, 51, 51, 0.5);
 $yellow: #E8C300;
 $black: rgba(0, 0, 0, 0.9);
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+$gray: #E5E5E5;
+$input: #E5E5E5;
 
-.nav{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    .nav__item{
-        text-decoration: none;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 700;
-        display: flex;
-        justify-content: center;
-        width: 133px;
-        margin-top: 50px;
-    };
 
-    .nav__item:hover{
-        text-decoration: underline;
-        transition: 0.2s;
-    }
-
-    .logo{
-        background-image: url("image/logo.svg");
-        width: 150px;
-        height: 150px;
-        margin-top: 25px;
-    };
-}
 
 *{
     margin: 0;
     padding: 0;
-    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
-.header{
-    background-image: url("image/header_bg.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.title{
-    .title__text{
-        font-size: 14px;
-        width: 100%;
-        font-weight: 700;
-        text-align: center
-    };
-    .title__name{
-        font-size: 96px;
-        font-weight: 400;
-        width: 998px;
-        text-align: center;
-        height: 140px;
-        font-family: 'Acme', sans-serif;
-    };
-    .line{
-        background-color: $yellow;
-        width: 60px;
-        height: 5px;
-        border-radius: 50px;
-    };
-    color: #fff;
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+a{
+    text-decoration: none;
 }
 
 .line{
@@ -84,97 +22,8 @@ $black: rgba(0, 0, 0, 0.9);
     width: 60px;
     height: 5px;
     border-radius: 50px;
-    margin-top: 1rem
+    margin-top: 20px;
 };
-
-.buttons{
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 225px;
-    .buttons__book{
-        width: 200px;
-        height: 60px;
-        color: #fff;
-        background-color: $yellow;
-        border-radius: 5px;
-        font-size: 12px;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.2s;
-    }
-    .buttons__explore{
-        width: 200px;
-        height: 60px;
-        color: #fff;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        font-size: 12px;
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 0.2s;
-    }
-
-    .buttons__book:hover, .buttons__explore:hover{
-        box-shadow: 1px 0px 11px 6px rgba(255, 255, 255, 0.36);
-        transition: 0.2s;
-        cursor: pointer;
-    }
-};
-
-.about{
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    margin-top: 5em;
-    flex-wrap: wrap;
-    gap: 4rem;
-    color: rgba(0, 0, 0, 1);
-    .about__img{
-        box-shadow: 0px 10px 20px 8px rgba(0, 0, 0, 0.2);
-    }
-};
-
-.about__text{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .about__title{
-        word-wrap: break-word;
-        font-weight: 400;
-        font-size: 36px;
-        font-family: 'Acme', sans-serif;
-    };
-    .line{
-        background-color: $yellow;
-        width: 60px;
-        height: 5px;
-        border-radius: 2.5rem;
-        margin-top: 1rem
-    };
-    .about__description--bold{
-        font-weight: 700;
-        font-size: 18px;
-        text-align: center;
-        line-height: 28px;
-    };
-    .about__description--regular{
-        font-weight: 400;
-        margin-top: 1.25rem;
-        font-size: 14px;
-        text-align: center;
-        line-height: 24px;
-    };
-}
 
 .wrapper{
     width: 100%;
@@ -182,119 +31,5 @@ $black: rgba(0, 0, 0, 0.9);
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.book{
-    display: flex;
-    margin-top: 4rem;
-    width: 100%;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 5.75rem;
-    flex-wrap: wrap;
-    .book__img{
-        box-shadow: 0px 10px 20px 8px rgba(0, 0, 0, 0.2);
-    }
-    .book__form{
-        width: 565px;
-        gap: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 360px;
-        justify-content: center;
-    }
-}
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: $black;
-    color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    height: 5rem;
-    font-size: 12px;
-}
-
-.footer__info{
-    font-weight: 400;
-    font-size: 12px;
-}
-
-.footer__bold{
-    font-size: 12px;
-}
-
-.booking-info{
-    color: $book-info;
-    font-size: 12px;
-    font-weight: 400;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 77px;
-    .booking-info__desc{
-        font-size: 12px;
-    }
-}
-
-
-.specialties{
-    background-image: url("image/specialties_bg.svg");
-    height: 675px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.specialties__content{
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    margin-top: 5em;
-    flex-wrap: wrap;
-    color: #FFF;
-    gap: 4rem;
-    .about__img{
-        box-shadow: 0px 10px 20px 8px rgba(0, 0, 0, 0.2);
-    }
-};
-
-.specialties__text{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgba(255, 255, 255, 0.9);
-    .specialties__title{
-        word-wrap: break-word;
-        font-weight: 400;
-        font-size: 36px;
-        font-family: 'Acme', sans-serif;
-    };
-    .line{
-        background-color: $yellow;
-        width: 60px;
-        height: 5px;
-        border-radius: 2.5rem;
-        margin-top: 1rem
-    };
-    .specialties__description--bold{
-        font-weight: 700;
-        margin-top: 1rem;
-        font-size: 18px;
-        text-align: center;
-        line-height: 28px;
-    };
-    .specialties__description--regular{
-        font-weight: 400;
-        margin-top: 1.25rem;
-        font-size: 14px;
-        text-align: center;
-        line-height: 24px;
-    };
+    gap: 60px;
 }

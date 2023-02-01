@@ -1,0 +1,90 @@
+$footer_color: rgba(255, 255, 255, 0.5);
+$book-info: rgba(51, 51, 51, 0.5);
+$yellow: #E8C300;
+$black: rgba(0, 0, 0, 0.9);
+$gray: #E5E5E5;
+$input: #E5E5E5;
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1155px;
+    width: 90%;
+    gap: 30px;
+    justify-content: space-between;
+    .contact__text{
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .contact__title{
+        font-family: 'Acme', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+    }
+    .contact__description{
+        font-weight: 700;
+        width: 60%;
+        text-align: center;
+    }
+}
+
+.contact__form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 360px;
+    max-height: max-content;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;   
+    .contact__input--textarea{
+        max-width: 1155px;
+        width: 100%;   
+        padding-top: 20px;
+    } 
+}
+
+.contact__input{
+background-color: $gray;
+font-weight: 400;
+font-size: 14px;
+border-radius: 5px;
+border: 0px;
+width: 360px;
+height: 60px;
+padding-left: 15px;
+color: $input;
+border: 1px solid rgba(51, 51, 51, 0);
+}
+
+.contact__button{
+    background-color: $yellow;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    width: 50%;
+    height: 60px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.contact__button:hover{
+    box-shadow: 1px 0px 11px 6px rgba(0, 0, 0, 0.36);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.contact__input:focus, textarea:focus{
+background-color: #fff;
+border-color: $yellow;
+outline: none;
+}

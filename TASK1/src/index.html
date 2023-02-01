@@ -1,25 +1,25 @@
 @@include('part/header.html')
 <div class="wrapper">
-    <section class="about">
+    <section class="about" id="about">
         <article class="about__text">
             <h1 class="about__title">ABOUT US</h1>
             <div class="line"> </div>
             <p class="about__description about__description--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
             <p class="about__description about__description--regular">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
         </article>
-        <img class="about__img" src="image/about_img.svg" alt="about_img">
+        <img class="about__img" src="image/about_img.png" alt="about_img">
     </section>
-    <section class="book">
+    <section class="book" id="book">
         <img class="book__img" src="image/book_img.svg" alt="book_img">
         <form action="#" class="book__form">
             <div class="book__info">
                 <h1 class="book__title">BOOK A TABLE</h1>
                 <div class="line"></div>
             </div>
-            <input type="text" placeholder="Name" class="book_input">
-            <input type="email" placeholder="Email" class="book_input">
-            <input type="phone" placeholder="Phone" class="book_input">
-            <select name="people" id="" class="book_input book_input--select">
+            <input type="text" placeholder="Name" class="book__input">
+            <input type="email" placeholder="Email" class="book__input">
+            <input type="phone" placeholder="Phone" class="book__input">
+            <select name="people" id="" class="book__input book__input--select">
                 <option disabled value="People" selected="selected">People</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -28,8 +28,8 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
             </select>
-            <input type="text" placeholder="Date (mm/dd)" class="book_input">
-            <select name="time" class="book_input book_input--select">
+            <input type="text" placeholder="Date (mm/dd)" class="book__input">
+            <select name="time" class="book__input book__input--select">
                 <option disabled value="time" selected="selected">Time</option>
                 <option value="1">9:00-11:00</option>
                 <option value="2">11:00-13:00</option>
@@ -43,10 +43,10 @@
         </form>
     </section>
     <p class="booking-info">Mon - Fri: <strong class="booking-info__desc"> 8PM - 10PM</strong> , Sat - Sun: <strong class="booking-info__desc"> 8PM - 3PM</strong>, Phone: <strong class="booking-info__desc"> +40 729 131 637/+40 726 458 782</strong></p>
-    <section class="specialties">
+    <section class="specialties" id="specialties">
         <p class="specialties__subtitle">SPECIALTIES</p>
         <div class="specialties__content">
-            <img class="specialties__img" src="image/specialties_img.svg" alt="">
+            <img class="specialties__img" src="image/specialties_img.png" alt="">
             <article class="specialties__text">
                 <h1 class="specialties__title">CHOCOLATE PANCAKES</h1>
                 <div class="line"> </div>
@@ -55,5 +55,37 @@
             </article>
         </div>
     </section>
+    <section class="contact" id="contact">
+        <div class="contact__text">
+            <p class="contact__title">CONTACT</p>
+            <div class="line"></div>
+            <p class="contact__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+        </div>
+        <form action="#" class="contact__form">
+            <input type="text" class="contact__input" placeholder="Name">
+            <input type="email" class="contact__input" placeholder="Email">
+            <input type="phone" class="contact__input" placeholder="Phone">
+            <textarea name="" id="" cols="50" rows="10" placeholder="Message" class="contact__input contact__input--textarea"></textarea>
+            <input type="submit" value="SEND MESSAGE" class="contact__button">
+        </form>
+    </section>
 </div>
+<script>
+    document.querySelector('#mobile-menu').addEventListener('click', () => {
+    document.querySelector('#nav').classList.toggle('visible');
+
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+        for (let smoothLink of smoothLinks) {
+            smoothLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                const id = smoothLink.getAttribute('href');
+
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        };
+}); 
+</script>
 @@include('part/footer.html')

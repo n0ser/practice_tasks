@@ -1,0 +1,56 @@
+$footer_color: rgba(255, 255, 255, 0.5);
+$book-info: rgba(51, 51, 51, 0.5);
+$yellow: #E8C300;
+$black: rgba(0, 0, 0, 0.9);
+$gray: #E5E5E5;
+$input: #E5E5E5;
+
+.about{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    gap: 80px;
+    flex-direction: row;
+    align-items: center;
+    height: max-content;
+    color: rgba(0, 0, 0, 1);
+    .about__img{
+        box-shadow: 0px 10px 20px 8px rgba(0, 0, 0, 0.2);
+    }
+};
+
+.about__text{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .about__title{
+        word-wrap: break-word;
+        font-weight: 400;
+        font-size: 36px;
+        font-family: 'Acme', sans-serif;
+    };
+    .line{
+        background-color: $yellow;
+        width: 60px;
+        height: 5px;
+        border-radius: 30px;
+        margin-top: 20px
+    };
+    .about__description--bold{
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        line-height: 28px;
+    };
+    .about__description--regular{
+        font-weight: 400;
+        margin-top: 25px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+    };
+}

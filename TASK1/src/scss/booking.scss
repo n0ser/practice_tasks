@@ -1,0 +1,122 @@
+$footer_color: rgba(255, 255, 255, 0.5);
+$book-info: rgba(51, 51, 51, 0.5);
+$yellow: #E8C300;
+$black: rgba(0, 0, 0, 0.9);
+$gray: #E5E5E5;
+$input: #33333390;
+
+
+.book{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 90%;
+    gap: 100px;
+    .book__img{
+        box-shadow: 0px 10px 20px 8px rgba(0, 0, 0, 0.2);
+    }
+    .book__form{
+        width: 90%;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 600px;
+        min-height: 360px;
+        max-height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.book__input{
+    background-color: $gray;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0px;
+    width: 277px;
+    height: 60px;
+    padding-left: 15px;
+    color: $input;
+    border: 1px solid rgba(51, 51, 51, 0);
+}
+
+.book__input:focus{
+    background-color: #fff;
+    border-color: $yellow;
+    outline: none;
+}
+
+
+
+.book__input--select{
+    width: 294px;
+    background-color: $gray;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 0px;
+    height: 62px;
+    padding-left: 15px;
+    color: $input;
+}
+
+.book__input--select:focus{
+    border: 1px solid $yellow;
+    background-color: #fff;
+    outline: none;
+}
+
+.book__button{
+    background-color: $yellow;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    width: 100%;
+    min-width: 294px;
+    height: 60px;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.book__button:hover{
+    box-shadow: 1px 0px 11px 6px rgba(0, 0, 0, 0.36);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.book__info{
+    width: 90%;
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.book__title{
+    font-weight: 400;
+    font-size: 36px;
+    font-family: 'Acme', sans-serif;
+}
+
+.booking-info{
+    color: $book-info;
+    font-size: 12px;
+    font-weight: 400;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    .booking-info__desc{
+        font-size: 12px;
+    }
+}

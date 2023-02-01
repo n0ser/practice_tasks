@@ -1,0 +1,28 @@
+$footer_color: rgba(255, 255, 255, 0.5);
+$book-info: rgba(51, 51, 51, 0.5);
+$yellow: #E8C300;
+$black: rgba(0, 0, 0, 0.9);
+$gray: #E5E5E5;
+$input: #E5E5E5;
+
+.footer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+}
+
+.footer__info{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.footer__bold{
+    font-size: 12px;
+}

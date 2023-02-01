@@ -1,0 +1,56 @@
+@media  (max-width: 360px) {
+    body img{
+        scale: 0.6;
+    }    
+    body .title__name{
+        width: 100%;
+    }
+}
+
+@media  (max-width: 600px) {
+    img{
+        scale: 0.7;
+    } 
+    .header{
+        .mobile-menu{
+            display: flex;
+        }
+        .nav{
+            display: none;
+        }
+    }   
+}
+
+@media (max-width: 1205px){
+    .contact{
+        width: 100%;
+        .contact__form{
+            flex-direction: column;
+            .contact__input{
+                width: 60%;
+            }
+        }
+    }
+    .book{
+        width: 100%;
+        .book__form{
+            flex-direction: column;
+            .book_input{
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px){
+    header{
+        .mobile-logo{
+            display: flex;
+        }
+        .nav{
+            .nav__item--logo{
+                display: none;
+            }
+        }
+    }
+}
