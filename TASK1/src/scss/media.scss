@@ -1,15 +1,27 @@
 @media  (max-width: 360px) {
     body img{
-        scale: 0.6;
+        width: 300px;
     }    
     body .title__name{
+        width: 100%;
+    }
+
+    body .book{
+        width: 100%;
+    }
+
+    body .about{
+        width: 100%;
+    }
+
+    body .title .title__name{
         width: 100%;
     }
 }
 
 @media  (max-width: 600px) {
     img{
-        scale: 0.7;
+        width: 330px;
     } 
     .header{
         .mobile-menu{
